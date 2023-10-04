@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import WorkoutPage from './pages/WorkoutPage';
 import Navbar from './components/Navbar'
+import Hero from './components/Hero';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
+      <Hero></Hero>
     </div>
   );
 }
