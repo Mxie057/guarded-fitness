@@ -1,5 +1,8 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* layout */
 :root {
@@ -100,13 +103,3 @@ div.error {
 input.error {
   border: 1px solid var(--error);
 }
-.carousel img {
-  max-height: 768px;
-  min-width: auto;
-  object-fit: cover;
-}
-
-.carousel h5 p{
-  color: #fff;
-}
-

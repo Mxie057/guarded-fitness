@@ -18,6 +18,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
+      <Hero></Hero>
     </div>
   );
 }
