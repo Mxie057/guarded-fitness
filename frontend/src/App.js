@@ -3,14 +3,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // Pages and Components
 import Home from './pages/Home';
 import WorkoutPage from './pages/WorkoutPage';
-import Navbar from './components/Navbar'
+import Navibar from './components/Navibar'
 import Hero from './components/Hero';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navbar />
+      <Navibar />
         <div className="pages">
           <Routes>
             <Route path ="/" element={<Home/>}/>

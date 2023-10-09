@@ -7,12 +7,13 @@
   --error: #e7195a;
 }
 body {
-  background: #f1f1f1;
+  background: #1d1c1a !important;
   margin: 0;
   font-family: "Poppins";
+  color: #ffffff !important;
 }
 header {
-  background: #fff;
+  background: #ffffff;
 }
 header .container {
   max-width: 1400px;
@@ -39,7 +40,7 @@ header a {
   gap: 100px;
 }
 .workout-card {
-  background: #fff;
+  background: #8e8e8d;
   border-radius: 4px;
   margin: 20px auto;
   padding: 20px;
@@ -49,27 +50,30 @@ header a {
 .workout-card h4 {
   margin: 0 0 10px 0;
   font-size: 1.2em;
-  color: var(--primary);
+  color: #1d1c1a;
 }
 .workout-card p {
   margin: 0;
   font-size: 0.9em;
-  color: #555;
+  color: #1d1c1a;
 }
 .workout-card span {
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
-  background: #f1f1f1;
+  background: #2C3639;
   padding: 6px;
   border-radius: 50%;
-  color: #333;
+  color: #ffffff;
 }
+
+
 
 /* new workout form */
 label, input {
   display: block;
+  color: #ffffff;
 }
 input {
   padding: 10px;
@@ -81,13 +85,15 @@ input {
   box-sizing: border-box;
 }
 form button {
-  background: var(--primary);
+  background: #3F4E4F;
   border: 0;
   color: #fff;
   padding: 10px;
   font-family: "Poppins";
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 div.error {
   padding: 10px;
@@ -104,9 +110,27 @@ input.error {
   max-height: 768px;
   min-width: auto;
   object-fit: cover;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05)
 }
 
 .carousel h5 p{
   color: #fff;
 }
+
+/* navbar */
+
+.navbar{
+  background-color: #4F4557;
+  font-family: "Poppins";
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.nav-link {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 700 !important;
+}
+.navbar-logo{
+  /* margin-left: 10px; */
+  margin-right: 10px;
+}
+
 

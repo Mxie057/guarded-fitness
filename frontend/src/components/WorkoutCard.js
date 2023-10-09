@@ -1,5 +1,8 @@
 import { formatDistance } from "date-fns";
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 // date fns
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
@@ -26,6 +29,24 @@ const WorkoutCard = ({ workout }) => {
             <p>{formatDistanceToNow(new Date(workout.createdAt), {addSuffix: true})}</p>
             <span className="material-symbols-outlined" onClick={handleClick}>delete</span>
         </div>
+
+        // <Row xs={1} md={2} className="workout-card">
+        // {Array.from({ length: 1 }).map((_, idx) => (
+        // <Col key={idx}>
+        //     <Card>
+        //     <Card.Body>
+        //         <Card.Title>{workout.title}</Card.Title>
+        //         <Card.Text>
+        //         Load: {workout.load}<br></br>
+        //         Reps: {workout.reps}<br></br>
+        //         {formatDistanceToNow(new Date(workout.createdAt), {addSuffix: true})}<br></br>
+        //         <span className="material-symbols-outlined" onClick={handleClick}>delete</span>
+        //         </Card.Text>
+        //     </Card.Body>
+        //     </Card>
+        // </Col>
+        // ))}
+        // </Row>
     )
 }
 
