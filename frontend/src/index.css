@@ -1,5 +1,8 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* layout */
 :root {
@@ -110,27 +113,9 @@ input.error {
   max-height: 768px;
   min-width: auto;
   object-fit: cover;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05)
 }
 
 .carousel h5 p{
   color: #fff;
 }
-
-/* navbar */
-
-.navbar{
-  background-color: #4F4557;
-  font-family: "Poppins";
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
-}
-.nav-link {
-  color: rgb(0, 0, 0) !important;
-  font-weight: 700 !important;
-}
-.navbar-logo{
-  /* margin-left: 10px; */
-  margin-right: 10px;
-}
-
 
