@@ -2,5 +2,9 @@
   "devDependencies": {
     "eslint": "^8.7.0",
     "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "validator": "^13.11.0"
   }
 }
