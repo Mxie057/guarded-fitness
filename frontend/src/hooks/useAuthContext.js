@@ -1,4 +1,4 @@
-import { AuthContext } from "../context/WorkoutContext";
+import { AuthContext } from "../context/AuthContextProvider";
 import { useContext } from "react";
 
 export const useAuthContext = () => {

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { WorkoutContextProvider } from './context/WorkoutContext';
-import { AuthContextProvider } from './context/AuthContextrovider';
+import { AuthContextProvider } from './context/AuthContext';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
