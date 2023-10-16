@@ -2,20 +2,14 @@ import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-
+import { ShieldShaded } from "@styled-icons/bootstrap/ShieldShaded";
 
 function Navibar() {
   return (
-    <Navbar expand="lg" className="navBar">
+    <Navbar expand="lg">
       <Container>
-        <img
-          src="/img/logo.png"
-          width="35"
-          height="35"
-          className="navbar-logo"
-          alt="GUARDED"
-        />
         <Navbar.Brand as={Link} to="/">
+          <ShieldShaded size="1em" />
           GUARDED
         </Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">

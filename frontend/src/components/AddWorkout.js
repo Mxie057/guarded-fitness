@@ -16,7 +16,7 @@ function AddWorkout() {
     <div className="add-workout">
       <Button
         className="add-workout-button"
-        variant="dark"
+        variant="outline-danger"
         onClick={handleShow}
       >
         Add Workout

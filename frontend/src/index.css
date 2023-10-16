@@ -1,5 +1,5 @@
 /* google font */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Roboto&family=Teko&display=swap");
 
 /* layout */
 :root {
@@ -7,30 +7,44 @@
   --error: #e7195a;
 }
 body {
-  background: #0d1321 !important;
+  background: #2a1b3d !important;
   margin: 0;
-  font-family: "Poppins";
   color: #ffffff !important;
 }
 
-.navBar {
-  background-color: #1d2d44;
+.navbar-brand {
+  font-family: "Anton";
+  font-size: 3vw !important;
+  color: #ffffff !important;
+}
+
+.nav-link {
+  font-family: "Teko";
+  font-size: 1.5vw !important;
+  color: #d83f87 !important;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #8265a7 !important;
 }
 
 .pages {
-  max-width: 1400px;
-  padding: 20px;
   margin: 0 auto;
 }
 
 /* homepage */
 .home {
-  display: block;
-  grid-template-columns: 3fr 1fr;
-  gap: 100px;
+  background: linear-gradient(to bottom, #2a1b3d, rgba(117, 19, 93, 0.73)),
+    url(../../frontend/public/img/backgroundImg.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .workout-card {
-  background: #748cab;
+  background: #d83f87;
   max-width: 60%;
   border-radius: 4px;
   margin: 20px auto;
@@ -64,6 +78,7 @@ label,
 input {
   display: block;
   color: #ffffff;
+  background-color: #1d1c1a;
 }
 input {
   padding: 10px;
@@ -106,4 +121,8 @@ input.error {
   margin: 0 auto;
   max-width: 100px;
   max-height: 100px;
+}
+
+.add-workout-button {
+  background-color: #e98074;
 }
