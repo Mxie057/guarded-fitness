@@ -1,5 +1,5 @@
 /* google font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
 
 /* layout */
 :root {
@@ -27,7 +27,7 @@ header a {
   color: #333;
   text-decoration: none;
 }
-.pages{
+.pages {
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
@@ -35,7 +35,7 @@ header a {
 
 /* homepage */
 .home {
-  display: grid;
+  display: block;
   grid-template-columns: 3fr 1fr;
   gap: 100px;
 }
@@ -45,7 +45,7 @@ header a {
   margin: 20px auto;
   padding: 20px;
   position: relative;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
 }
 .workout-card h4 {
   margin: 0 0 10px 0;
@@ -62,14 +62,15 @@ header a {
   top: 20px;
   right: 20px;
   cursor: pointer;
-  background: #2C3639;
+  background: #2c3639;
   padding: 6px;
   border-radius: 50%;
   color: #ffffff;
 }
 
 /* new workout form */
-label, input {
+label,
+input {
   display: block;
   color: #ffffff;
 }
@@ -83,7 +84,7 @@ input {
   box-sizing: border-box;
 }
 form button {
-  background: #3F4E4F;
+  background: #3f4e4f;
   border: 0;
   color: #fff;
   padding: 10px;
@@ -104,13 +105,14 @@ div.error {
 input.error {
   border: 1px solid var(--error);
 }
-.carousel img {
-  max-height: 768px;
-  min-width: auto;
-  object-fit: cover;
+
+.workout-modal-body,
+.workout-modal-header {
+  background-color: #1d1c1a;
 }
 
-.carousel h5 p{
-  color: #fff;
+.add-workout {
+  margin: 0 auto;
+  max-width: 100px;
+  max-height: 100px;
 }
-
