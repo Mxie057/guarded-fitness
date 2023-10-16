@@ -7,26 +7,16 @@
   --error: #e7195a;
 }
 body {
-  background: #1d1c1a !important;
+  background: #0d1321 !important;
   margin: 0;
   font-family: "Poppins";
   color: #ffffff !important;
 }
-header {
-  background: #ffffff;
+
+.navBar {
+  background-color: #1d2d44;
 }
-header .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header a {
-  color: #333;
-  text-decoration: none;
-}
+
 .pages {
   max-width: 1400px;
   padding: 20px;
@@ -40,7 +30,8 @@ header a {
   gap: 100px;
 }
 .workout-card {
-  background: #8e8e8d;
+  background: #748cab;
+  max-width: 60%;
   border-radius: 4px;
   margin: 20px auto;
   padding: 20px;
