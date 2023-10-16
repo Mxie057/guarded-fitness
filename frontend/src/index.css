@@ -13,7 +13,7 @@ body {
   color: #ffffff !important;
 }
 header {
-  background: #ffffff;
+  background: #000000 !important;
 }
 header .container {
   max-width: 1400px;
@@ -69,11 +69,12 @@ header a {
 }
 
 /* new workout form */
-label,
-input {
+label
+{
   display: block;
   color: #ffffff;
 }
+
 input {
   padding: 10px;
   margin-top: 10px;
@@ -115,4 +116,8 @@ input.error {
   margin: 0 auto;
   max-width: 100px;
   max-height: 100px;
+}
+
+.modal-content{
+  color: #1d1c1a;
 }
