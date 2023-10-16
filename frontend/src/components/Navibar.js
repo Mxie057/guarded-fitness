@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { useLogout } from "../hooks/useLogout";
 import { useAuthContext } from "../hooks/useAuthContext";
 
+import { ShieldShaded } from "@styled-icons/bootstrap/ShieldShaded";
 
 function Navibar() {
   const { logout } = useLogout()
@@ -15,16 +16,10 @@ function Navibar() {
   }
 
   return (
-    <Navbar expand="lg" bg="light">
+    <Navbar expand="lg">
       <Container>
-        <img
-          src="/img/logo.png"
-          width="35"
-          height="35"
-          className="navbar-logo"
-          alt="GUARDED"
-        />
         <Navbar.Brand as={Link} to="/">
+          <ShieldShaded size="1em" />
           GUARDED
         </Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">

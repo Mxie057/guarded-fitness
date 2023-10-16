@@ -16,7 +16,7 @@ function AddWorkout() {
     <div className="add-workout">
       <Button
         className="add-workout-button"
-        variant="dark"
+        variant="outline-danger"
         onClick={handleShow}
       >
         Add Workout
@@ -25,7 +25,7 @@ function AddWorkout() {
       <Modal show={show} onHide={handleClose}>
         <Modal.Header className="workout-modal-header">
           <ModalTitle>Add Workout</ModalTitle>
-          <CloseButton variant="white"></CloseButton>
+          <CloseButton variant="white" onClick={handleClose}></CloseButton>
         </Modal.Header>
         <ModalBody className="workout-modal-body">
           <WorkoutForm />
