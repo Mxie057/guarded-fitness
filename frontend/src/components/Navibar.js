@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
+
 function Navibar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
@@ -21,6 +22,14 @@ function Navibar() {
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/workouts">
               Workouts
+            </Nav.Link>
+          </Nav>
+          <Nav className="justify-content-end flex-grow-1 pe-3">
+            <Nav.Link as={Link} to="/signup">
+              Sign up
+            </Nav.Link>
+            <Nav.Link as={Link} to="/login">
+              Login
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
