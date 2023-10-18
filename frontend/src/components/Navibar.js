@@ -8,18 +8,19 @@ import { useAuthContext } from "../hooks/useAuthContext";
 import { ShieldShaded } from "@styled-icons/bootstrap/ShieldShaded";
 
 function Navibar() {
-  const { logout } = useLogout()
-  const { user } = useAuthContext()
+  const { logout } = useLogout();
+  const { user } = useAuthContext();
 
   const handleClick = () => {
-    logout()
-  }
+    logout();
+  };
 
   return (
     <Navbar expand="lg">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          <ShieldShaded size="1em" />
+          <ShieldShaded size="1em" className="mb-1" />
+          <span> </span>
           GUARDED
         </Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
@@ -28,8 +29,21 @@ function Navibar() {
               Workouts
             </Nav.Link>
           </Nav>
-          
-          
+          <Nav className="justify-content-end flex-grow-1 pe-3">
+            {!user && (
+              <Nav.Item>
+                <Nav.Link as={Link} to="/login">
+                  Login
+                </Nav.Link>
+              </Nav.Item>
+            )}
+            {user && (
+              <div>
+                <span> {user.email}</span>
+                <button onClick={handleClick}>Log Out</button>
+              </div>
+            )}
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

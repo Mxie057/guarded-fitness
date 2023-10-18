@@ -1,19 +1,25 @@
 /* google font */
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Roboto&family=Teko&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Bungee&family=Oswald&family=Roboto&family=Teko&display=swap");
 /* layout */
 :root {
   --primary: #1aac83;
   --error: #e7195a;
 }
 body {
-  background: #2a1b3d !important;
+  background: linear-gradient(to bottom, #0a152c, rgba(0, 0, 0, 0.2)),
+    url(../../frontend/public/img/backgroundImg.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
+  height: 100vh;
   color: #ffffff !important;
 }
 
 .navbar-brand {
   font-family: "Anton";
+  text-shadow: 2px 2px #383737;
   font-size: 3vw !important;
   color: #ffffff !important;
 }
@@ -21,7 +27,7 @@ body {
 .nav-link {
   font-family: "Teko";
   font-size: 1.5vw !important;
-  color: #d83f87 !important;
+  color: #e43855 !important;
 }
 
 .navbar-brand:hover,
@@ -34,14 +40,10 @@ body {
 }
 
 /* homepage */
-.home {
-  background: linear-gradient(to bottom, #2a1b3d, rgba(117, 19, 93, 0.73)),
-    url(../../frontend/public/img/backgroundImg.jpg);
-  height: 100vh;
-  width: 100vw;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.hero-content h1 {
+  font-family: "Bebas Neue";
+  text-shadow: 3px 5px #383737;
+  font-size: 5vw;
 }
 .workout-card {
   background: #d83f87;
@@ -74,8 +76,7 @@ body {
 }
 
 /* new workout form */
-label
-{
+label {
   display: block;
   color: #ffffff;
   background-color: #1d1c1a;
@@ -126,4 +127,10 @@ input.error {
 
 .add-workout-button {
   background-color: #e98074;
+}
+
+.login,
+.signup {
+  margin: auto;
+  max-width: 50%;
 }
